@@ -15,9 +15,9 @@ import java.util.Map;
 public class ChannelExecutor
 {
 
-    private static volatile ChannelExecutor channelExecutor = new ChannelExecutor();
+    private static ChannelExecutor channelExecutor = new ChannelExecutor();
 
-    private static volatile Map<String, Channel> channels;
+    private static Map<String, Channel> channels;
 
     private ChannelExecutor()
     {

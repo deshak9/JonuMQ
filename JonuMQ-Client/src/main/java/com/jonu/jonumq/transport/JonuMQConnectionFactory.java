@@ -1,7 +1,5 @@
 package com.jonu.jonumq.transport;
 
-import com.jonu.jonumq.message.JonuMQWireMessage;
-
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
 import javax.jms.JMSContext;

@@ -59,12 +59,15 @@ public class ClientHandler extends Thread
             try {
                 if (objectInputStream == null) {
                     objectInputStream = getInputStream(in);
+                    //objectInputStream = null;
                 }
             } catch (IOException e) {
                 logger.log(Level.INFO, "Client got disconnected");
                 e.printStackTrace();
                 break;
             }
+            byte[] bytes = new byte[100];
+            System.out.println(new String(bytes));
             if (objectInputStream != null) {
                 if (!Server.isBrokerRunning()) {
                     logger.log(Level.SEVERE, "Broker was stopped, stopping all work");
@@ -101,7 +104,8 @@ public class ClientHandler extends Thread
 
     private ObjectInputStream getInputStream(DataInputStream in) throws IOException
     {
-        return new ObjectInputStream(in);
+        //return new ObjectInputStream(in);
+        return null;
     }
 
     private boolean checkIfAnyObjectReceived(DataInput in)

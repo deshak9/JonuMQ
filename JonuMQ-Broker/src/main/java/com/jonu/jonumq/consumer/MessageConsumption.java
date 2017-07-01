@@ -14,7 +14,7 @@ import java.io.IOException;
  */
 public class MessageConsumption extends Thread
 {
-    volatile Channel channel;
+    Channel channel;
 
     public MessageConsumption(Channel channel)
     {

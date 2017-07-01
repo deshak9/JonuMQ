@@ -73,9 +73,9 @@ public class TestClientForQueue
                 TextMessage message = session.createTextMessage(text + i);
                 producer.send(message);
                 //if (i % 100000 == 0) {
-                    System.out.println(i);
+                System.out.println(i);
                 //}
-                Thread.sleep(1);
+                Thread.sleep(100);
                 i++;
             }
 

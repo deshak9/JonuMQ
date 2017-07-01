@@ -19,10 +19,10 @@ public class Channel
     private final Logger logger = Logger.getLogger(Channel.class.getName());
     LinkedBlockingQueue<JonuMQMessageWrapper> list = new LinkedBlockingQueue<JonuMQMessageWrapper>();
 
-    private volatile LinkedBlockingQueue<JonuMQMessageWrapper> listOfMessages;
-    private volatile LinkedBlockingQueue<JonuMQMessageWrapper> listOfPersistMessage;
-    private volatile List<ObjectOutputStream> consumerList;
-    private volatile ChannelType channelType = null;
+    private LinkedBlockingQueue<JonuMQMessageWrapper> listOfMessages;
+    private LinkedBlockingQueue<JonuMQMessageWrapper> listOfPersistMessage;
+    private List<ObjectOutputStream> consumerList;
+    private ChannelType channelType = null;
     private volatile boolean running = true;
     private final int MAX_MESSAGES = Integer.MAX_VALUE;
 
