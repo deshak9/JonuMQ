@@ -3,8 +3,6 @@
  */
 package com.jonu.jonumq.message;
 
-import com.jonu.jonumq.message.JonuMQMessage;
-
 import java.io.Serializable;
 
 /**

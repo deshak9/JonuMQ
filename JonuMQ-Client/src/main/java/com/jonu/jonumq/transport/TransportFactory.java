@@ -219,7 +219,7 @@ public class TransportFactory
     {
         closeInStream();
         startClient();
-        
+
         // register the consumer again
         send(consumerRegisteringMessage);
         createInPutStream();

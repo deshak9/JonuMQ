@@ -25,7 +25,7 @@ public class TopicConsumer extends Consumer
             JonuMQMessageWrapper message = super.getFirstMessage(channel);
             if (message != null) {
                 long messageOutTime = message.getMessageOutTime();
-                
+
                 // need this temporary list to remove closed out stream
                 // because if we remove here itself then other consumers will be affected
                 List<ObjectOutputStream> needToRemove = new ArrayList<ObjectOutputStream>();
